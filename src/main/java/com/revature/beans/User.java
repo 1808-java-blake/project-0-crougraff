@@ -16,16 +16,13 @@ public class User implements Serializable {
 	private String firstName;
 	private String lastName;
 	private int age;
-	private int routingNumber;
-	private int accountNumber;
 	private double balance;
 	private HashMap<String, Double> transactionHistory = new HashMap<>();
 	public User() {
 		super();
 		// TODO Auto-generated constructor stub
 	}
-	public User(String username, String password, String firstName, String lastName, int age, double balance,
-			HashMap<String, Double> transactionHistory) {
+	public User(String username, String password, String firstName, String lastName, int age, double balance,HashMap<String, Double> transactionHistory ) {
 		super();
 		this.username = username;
 		this.password = password;
@@ -68,9 +65,10 @@ public class User implements Serializable {
 	public double getBalance() {
 		return balance;
 	}
-	public void deposit(double amount) {
+	public double deposit(double amount) {
 		balance += amount;
 		transactionHistory.put("deposit",amount);
+		return amount;
 	}
 	public void withdraw(double amount) {
 		if(amount > balance) {
