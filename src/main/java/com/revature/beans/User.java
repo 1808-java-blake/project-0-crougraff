@@ -16,6 +16,8 @@ public class User implements Serializable {
 	private String firstName;
 	private String lastName;
 	private int age;
+	private int routingNumber;
+	private int accountNumber;
 	private double balance;
 	private HashMap<String, Double> transactionHistory = new HashMap<>();
 	public User() {
@@ -72,19 +74,35 @@ public class User implements Serializable {
 	}
 	public void withdraw(double amount) {
 		if(amount > balance) {
-			System.out.println("current balance: " + NumberFormat.getCurrencyInstance().format(balance));
+			System.out.println("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
 			return;
 		}
 		balance -= amount;
 		transactionHistory.put("withdraw",amount);
+
 	}
 	public HashMap<String, Double> getTransactionHistory() {
 		return transactionHistory;
 	}
 	public void printTransactionHistory() {
 		for (String key : transactionHistory.keySet()) {
-			System.out.println(key + " " + NumberFormat.getCurrencyInstance().format(transactionHistory.get(key)));
+			System.out.println(key + " " + NumberFormat.getCurrencyInstance().format(transactionHistory.get(key)) );
 		}
+	}
+	public int sendTransfer(User u, double amount) {
+		if (balance > amount) {
+			u.receiveTransfer(this, amount);
+			balance -= amount;
+			transactionHistory.put("wire transfer to "+u.getUsername(), amount);
+			return 1;
+		}else {
+			System.out.println("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
+			return 0;
+		}
+	}
+	public void receiveTransfer(User u, double amount) {
+		balance += amount;
+		transactionHistory.put("wire transfer from "+u.getUsername(), amount);
 	}
 	@Override
 	public int hashCode() {

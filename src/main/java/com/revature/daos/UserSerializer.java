@@ -70,14 +70,11 @@ public class UserSerializer implements UserDao {
 			}
 
 		} catch (FileNotFoundException e) {
-			// TODO Auto-generated catch block
-//			e.printStackTrace();
+
 		} catch (IOException e) {
-			// TODO Auto-generated catch block
-//			e.printStackTrace();
+
 		} catch (ClassNotFoundException e) {
-			// TODO Auto-generated catch block
-//			e.printStackTrace();
+
 		}
 		return null;
 	}
@@ -118,7 +115,7 @@ public class UserSerializer implements UserDao {
 				}
 				try (ObjectInputStream ois = new ObjectInputStream(
 						new FileInputStream("src/main/resources/users/" + username + ".txt"))) {
-					User u = (User) ois.readObject(); // retrieve the user if it can
+					User u = (User) ois.readObject(); // returns an object must cast to type 
 					return u;
 				} catch (FileNotFoundException e) {
 

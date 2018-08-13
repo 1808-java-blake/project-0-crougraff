@@ -231,3 +231,100 @@
 2018-08-11 17:52:29 TRACE LoginScreen:20 - username = crougraff
 2018-08-11 17:52:33 DEBUG LoginScreen:28 - received users credentials
 2018-08-11 17:52:33 DEBUG LoginScreen:17 - started login screen
+2018-08-11 18:04:09 TRACE Launcher:11 - trace log
+2018-08-11 18:04:09 DEBUG Launcher:12 - debug log
+2018-08-11 18:04:09 INFO  Launcher:13 - info log
+2018-08-11 18:04:09 WARN  Launcher:14 - warn log
+2018-08-11 18:04:09 ERROR Launcher:15 - error log
+2018-08-11 18:04:09 FATAL Launcher:16 - fatal log
+2018-08-11 18:04:14 DEBUG LoginScreen:17 - started login screen
+2018-08-11 18:04:18 TRACE LoginScreen:20 - username = crougraff
+2018-08-11 18:04:22 DEBUG LoginScreen:28 - received users credentials
+2018-08-11 18:04:22 DEBUG LoginScreen:17 - started login screen
+2018-08-11 18:04:25 TRACE LoginScreen:20 - username = Register
+2018-08-11 18:04:34 DEBUG LoginScreen:17 - started login screen
+2018-08-11 18:04:38 TRACE LoginScreen:20 - username = crougraff
+2018-08-11 18:04:40 DEBUG LoginScreen:28 - received users credentials
+2018-08-11 18:04:40 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:24:37 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:24:42 TRACE LoginScreen:20 - username = crougraff
+2018-08-13 13:24:44 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:24:44 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:27:22 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:27:25 TRACE LoginScreen:20 - username = crougraff
+2018-08-13 13:27:28 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:27:28 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:27:52 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:27:54 TRACE LoginScreen:20 - username = crougraff
+2018-08-13 13:27:56 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:27:56 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:28:31 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:28:39 TRACE LoginScreen:20 - username = Register
+2018-08-13 13:28:51 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:28:58 TRACE LoginScreen:20 - username = bob
+2018-08-13 13:29:00 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:29:00 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:49:03 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:49:07 TRACE LoginScreen:20 - username = crougraff
+2018-08-13 13:49:09 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:49:09 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:49:22 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:49:26 TRACE LoginScreen:20 - username = bob
+2018-08-13 13:49:29 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:49:29 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:49:32 TRACE LoginScreen:20 - username = Register
+2018-08-13 13:49:42 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:49:45 TRACE LoginScreen:20 - username = bob
+2018-08-13 13:49:47 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:49:47 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:50:37 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:50:54 TRACE LoginScreen:20 - username = crougraff
+2018-08-13 13:50:59 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:50:59 DEBUG LoginScreen:17 - started login screen
+2018-08-13 13:51:02 TRACE LoginScreen:20 - username = crougraff
+2018-08-13 13:51:04 DEBUG LoginScreen:28 - received users credentials
+2018-08-13 13:51:04 INFO  LoginScreen:34 - user succefully logged in
+2018-08-13 13:51:21 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:03:59 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:06:54 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:32:18 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:32:23 TRACE LoginScreen:52 - username = crougraff
+2018-08-13 14:32:25 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:32:25 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:32:33 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:32:35 TRACE LoginScreen:52 - username = bob
+2018-08-13 14:32:36 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:32:36 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:33:15 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:33:17 TRACE LoginScreen:52 - username = crougraff
+2018-08-13 14:33:19 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:33:19 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:35:03 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:35:19 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:35:28 TRACE LoginScreen:52 - username = crougraff
+2018-08-13 14:35:31 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:35:31 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:35:34 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:35:36 TRACE LoginScreen:52 - username = bob
+2018-08-13 14:35:37 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:35:37 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:36:43 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:37:05 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:37:12 TRACE LoginScreen:52 - username = crougraf
+2018-08-13 14:37:15 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:37:15 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:37:17 TRACE LoginScreen:52 - username = crougraff
+2018-08-13 14:37:19 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:37:19 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:37:30 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:37:32 TRACE LoginScreen:52 - username = bob
+2018-08-13 14:37:33 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:37:33 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:39:06 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:39:08 TRACE LoginScreen:52 - username = crougraff
+2018-08-13 14:39:10 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:39:10 INFO  LoginScreen:66 - user succefully logged in
+2018-08-13 14:39:21 DEBUG LoginScreen:17 - started login screen
+2018-08-13 14:39:24 TRACE LoginScreen:52 - username = crougraff
+2018-08-13 14:39:24 DEBUG LoginScreen:60 - received users credentials
+2018-08-13 14:39:24 DEBUG LoginScreen:17 - started login screen
