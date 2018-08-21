@@ -525,3 +525,22 @@
 2018-08-20 21:42:09 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
 2018-08-20 21:42:09 TRACE UserDaoJdbc:116 - 1 record updated
 2018-08-20 21:44:55 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:45:00 TRACE LoginScreen:52 - username = bob
+2018-08-20 21:45:01 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 21:45:01 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 21:49:02 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:49:06 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 21:49:09 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 21:49:09 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 21:50:07 TRACE UserTransactionDaoJdbc:34 - 1 record inserted
+2018-08-20 21:50:07 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 21:51:00 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:51:17 TRACE LoginScreen:52 - username = Admin
+2018-08-20 21:51:19 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 21:51:19 WARN  UserDaoJdbc:66 - failed to find user with provided credentials from the db
+2018-08-20 21:51:19 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:51:23 TRACE LoginScreen:52 - username = Register
+2018-08-20 21:51:34 TRACE UserDaoJdbc:36 - 1 records created
+2018-08-20 21:51:34 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:51:43 TRACE LoginScreen:52 - username = Admin
+2018-08-20 21:51:44 DEBUG LoginScreen:60 - received users credentials
