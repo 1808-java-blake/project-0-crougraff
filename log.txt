@@ -328,3 +328,200 @@
 2018-08-13 14:39:24 TRACE LoginScreen:52 - username = crougraff
 2018-08-13 14:39:24 DEBUG LoginScreen:60 - received users credentials
 2018-08-13 14:39:24 DEBUG LoginScreen:17 - started login screen
+2018-08-17 09:08:06 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:07:12 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:07:19 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 15:07:22 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:07:22 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:07:35 TRACE LoginScreen:52 - username = Register
+2018-08-20 15:07:46 ERROR UserDaoJdbc:37 - No suitable driver found for jdbc:postgresql://localhost:5432/postgres?currentSchema=banking_app
+2018-08-20 15:07:46 ERROR UserDaoJdbc:39 - java.sql.DriverManager.getConnection(Unknown Source)
+2018-08-20 15:07:46 ERROR UserDaoJdbc:39 - java.sql.DriverManager.getConnection(Unknown Source)
+2018-08-20 15:07:46 ERROR UserDaoJdbc:39 - com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:25)
+2018-08-20 15:07:46 ERROR UserDaoJdbc:39 - com.revature.daos.UserDaoJdbc.createUser(UserDaoJdbc.java:24)
+2018-08-20 15:07:46 ERROR UserDaoJdbc:39 - com.revature.screens.RegisterUserScreen.start(RegisterUserScreen.java:28)
+2018-08-20 15:07:46 ERROR UserDaoJdbc:39 - com.revature.launcher.Launcher.main(Launcher.java:13)
+2018-08-20 15:07:46 WARN  UserDaoJdbc:41 - failed to create new user
+2018-08-20 15:07:46 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:07:55 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 15:07:58 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:07:58 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:13:55 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:14:00 TRACE LoginScreen:52 - username = Register
+2018-08-20 15:14:10 ERROR UserDaoJdbc:36 - No suitable driver found for jdbc:postgresql://localhost:5432/postgres?currentSchema=banking_app
+2018-08-20 15:14:10 ERROR UserDaoJdbc:38 - java.sql.DriverManager.getConnection(Unknown Source)
+2018-08-20 15:14:10 ERROR UserDaoJdbc:38 - java.sql.DriverManager.getConnection(Unknown Source)
+2018-08-20 15:14:10 ERROR UserDaoJdbc:38 - com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:25)
+2018-08-20 15:14:10 ERROR UserDaoJdbc:38 - com.revature.daos.UserDaoJdbc.createUser(UserDaoJdbc.java:24)
+2018-08-20 15:14:10 ERROR UserDaoJdbc:38 - com.revature.screens.RegisterUserScreen.start(RegisterUserScreen.java:28)
+2018-08-20 15:14:10 ERROR UserDaoJdbc:38 - com.revature.launcher.Launcher.main(Launcher.java:13)
+2018-08-20 15:14:10 WARN  UserDaoJdbc:40 - failed to create new user
+2018-08-20 15:14:10 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:14:12 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 15:14:14 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:14:14 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:16:36 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:16:44 TRACE LoginScreen:52 - username = register
+2018-08-20 15:16:48 ERROR UserDaoJdbc:37 - No suitable driver found for jdbc:postgresql://localhost:5432/postgres?currentSchema=banking_app
+2018-08-20 15:16:48 ERROR UserDaoJdbc:39 - java.sql.DriverManager.getConnection(Unknown Source)
+2018-08-20 15:16:48 ERROR UserDaoJdbc:39 - java.sql.DriverManager.getConnection(Unknown Source)
+2018-08-20 15:16:48 ERROR UserDaoJdbc:39 - com.revature.util.ConnectionUtil.getConnection(ConnectionUtil.java:25)
+2018-08-20 15:16:48 ERROR UserDaoJdbc:39 - com.revature.daos.UserDaoJdbc.createUser(UserDaoJdbc.java:25)
+2018-08-20 15:16:48 ERROR UserDaoJdbc:39 - com.revature.screens.RegisterUserScreen.start(RegisterUserScreen.java:28)
+2018-08-20 15:16:48 ERROR UserDaoJdbc:39 - com.revature.launcher.Launcher.main(Launcher.java:13)
+2018-08-20 15:16:48 WARN  UserDaoJdbc:41 - failed to create new user
+2018-08-20 15:16:48 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:17:57 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:18:01 TRACE LoginScreen:52 - username = register
+2018-08-20 15:18:06 ERROR UserDaoJdbc:37 - ERROR: syntax error at or near "user"
+  Position: 13
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2433)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2178)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:306)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:155)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:132)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - com.revature.daos.UserDaoJdbc.createUser(UserDaoJdbc.java:34)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - com.revature.screens.RegisterUserScreen.start(RegisterUserScreen.java:28)
+2018-08-20 15:18:06 ERROR UserDaoJdbc:39 - com.revature.launcher.Launcher.main(Launcher.java:13)
+2018-08-20 15:18:06 WARN  UserDaoJdbc:41 - failed to create new user
+2018-08-20 15:18:06 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:18:53 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:18:59 TRACE LoginScreen:52 - username = Register
+2018-08-20 15:19:09 ERROR UserDaoJdbc:37 - ERROR: column "age" is of type integer but expression is of type character varying
+  Hint: You will need to rewrite or cast the expression.
+  Position: 102
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2433)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2178)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:306)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:155)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:132)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - com.revature.daos.UserDaoJdbc.createUser(UserDaoJdbc.java:34)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - com.revature.screens.RegisterUserScreen.start(RegisterUserScreen.java:28)
+2018-08-20 15:19:09 ERROR UserDaoJdbc:39 - com.revature.launcher.Launcher.main(Launcher.java:13)
+2018-08-20 15:19:09 WARN  UserDaoJdbc:41 - failed to create new user
+2018-08-20 15:19:09 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:21:18 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:21:22 TRACE LoginScreen:52 - username = Register
+2018-08-20 15:21:35 TRACE UserDaoJdbc:35 - 1 records created
+2018-08-20 15:21:35 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:21:38 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:21:40 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:21:40 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:29:38 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:29:45 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:30:19 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:30:23 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:30:23 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:35:18 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:35:23 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:35:24 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:35:25 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 15:37:23 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:37:28 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:37:30 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:37:30 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 15:49:25 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:49:30 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:49:32 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:49:32 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 15:49:57 TRACE UserDaoJdbc:116 - 1 records created
+2018-08-20 15:49:59 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:50:03 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 15:50:06 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:50:06 WARN  UserDaoJdbc:66 - failed to find user with provided credentials from the db
+2018-08-20 15:50:06 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:50:11 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:50:13 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:50:13 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 15:52:47 DEBUG LoginScreen:17 - started login screen
+2018-08-20 15:52:50 TRACE LoginScreen:52 - username = Chris
+2018-08-20 15:52:52 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 15:52:52 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 16:55:41 DEBUG LoginScreen:17 - started login screen
+2018-08-20 16:55:46 TRACE LoginScreen:52 - username = Chris
+2018-08-20 16:55:49 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 16:55:49 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 16:56:00 TRACE UserTransactionDaoJdbc:32 - 1 record inserted
+2018-08-20 16:56:00 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:34 - ERROR: duplicate key value violates unique constraint "user_transaction_history_pkey"
+  Detail: Key (uid)=(1) already exists.
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2433)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2178)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:306)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:441)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.jdbc.PgStatement.execute(PgStatement.java:365)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:155)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:132)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - com.revature.daos.UserTransactionDaoJdbc.addUserTransaction(UserTransactionDaoJdbc.java:31)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - com.revature.beans.User.withdraw(User.java:81)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - com.revature.screens.HomeScreen.start(HomeScreen.java:38)
+2018-08-20 16:56:06 ERROR UserTransactionDaoJdbc:36 - com.revature.launcher.Launcher.main(Launcher.java:13)
+2018-08-20 16:56:06 WARN  UserTransactionDaoJdbc:38 - failed to create new user
+2018-08-20 16:56:06 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 18:56:15 DEBUG LoginScreen:17 - started login screen
+2018-08-20 18:56:21 TRACE LoginScreen:52 - username = Chris 
+2018-08-20 18:56:24 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 18:56:24 WARN  UserDaoJdbc:66 - failed to find user with provided credentials from the db
+2018-08-20 18:56:24 DEBUG LoginScreen:17 - started login screen
+2018-08-20 18:56:28 TRACE LoginScreen:52 - username = Register
+2018-08-20 18:56:39 TRACE UserDaoJdbc:36 - 1 records created
+2018-08-20 18:56:39 DEBUG LoginScreen:17 - started login screen
+2018-08-20 18:56:42 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 18:56:46 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 18:56:46 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 18:56:54 TRACE UserTransactionDaoJdbc:32 - 1 record inserted
+2018-08-20 18:56:54 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 18:57:00 DEBUG LoginScreen:17 - started login screen
+2018-08-20 18:57:02 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 18:57:05 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 18:57:05 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 18:57:57 TRACE UserTransactionDaoJdbc:32 - 1 record inserted
+2018-08-20 18:57:57 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 19:43:10 DEBUG LoginScreen:17 - started login screen
+2018-08-20 19:43:14 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 19:43:17 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 19:43:17 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 19:45:28 DEBUG LoginScreen:17 - started login screen
+2018-08-20 19:45:31 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 19:45:33 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 19:45:34 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 19:45:57 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 19:45:58 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 19:46:04 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 19:46:04 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 19:53:37 DEBUG LoginScreen:17 - started login screen
+2018-08-20 19:53:42 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 19:53:44 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 19:53:44 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 19:53:49 INFO  User:90 - deposit $200.00
+2018-08-20 19:54:52 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 19:54:52 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 19:54:54 INFO  User:90 - deposit $200.00
+2018-08-20 20:14:17 DEBUG LoginScreen:17 - started login screen
+2018-08-20 20:14:21 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 20:14:25 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 20:14:25 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 20:15:06 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 20:15:06 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 21:39:39 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:39:43 TRACE LoginScreen:52 - username = crougraff
+2018-08-20 21:39:46 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 21:39:46 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 21:40:04 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:40:09 TRACE LoginScreen:52 - username = register
+2018-08-20 21:40:19 TRACE UserDaoJdbc:36 - 1 records created
+2018-08-20 21:40:19 DEBUG LoginScreen:17 - started login screen
+2018-08-20 21:40:23 TRACE LoginScreen:52 - username = bob
+2018-08-20 21:40:24 DEBUG LoginScreen:60 - received users credentials
+2018-08-20 21:40:24 INFO  LoginScreen:66 - user succefully logged in
+2018-08-20 21:40:28 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 21:40:28 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 21:40:37 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 21:40:37 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 21:42:09 TRACE UserTransactionDaoJdbc:33 - 1 record inserted
+2018-08-20 21:42:09 TRACE UserDaoJdbc:116 - 1 record updated
+2018-08-20 21:44:55 DEBUG LoginScreen:17 - started login screen

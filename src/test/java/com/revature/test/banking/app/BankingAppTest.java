@@ -1,14 +1,8 @@
 package com.revature.test.banking.app;
 
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertSame;
-
 import java.util.HashMap;
-
-import org.junit.Assert;
-import org.junit.Rule;
 import org.junit.Test;
-
 import com.revature.beans.User;
 import com.revature.daos.UserDao;
 

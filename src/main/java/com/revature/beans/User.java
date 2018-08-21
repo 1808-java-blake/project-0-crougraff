@@ -1,16 +1,14 @@
 package com.revature.beans;
 
-import java.io.Serializable;
 import java.text.NumberFormat;
 import java.util.HashMap;
 
-public class User implements Serializable {
+import org.apache.log4j.Logger;
 
-	/**
-	 * 
-	 */
-	private static final long serialVersionUID = 2878891003003024330L;
-	
+import com.revature.daos.UserTransactionDao;
+
+public class User{
+	private int uid;
 	private String username;
 	private String password;
 	private String firstName;
@@ -18,9 +16,10 @@ public class User implements Serializable {
 	private int age;
 	private double balance;
 	private HashMap<String, Double> transactionHistory = new HashMap<>();
+	private Logger log = Logger.getRootLogger();
+	private UserTransactionDao utd = UserTransactionDao.userTransactionDao;
 	public User() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public User(String username, String password, String firstName, String lastName, int age, double balance,HashMap<String, Double> transactionHistory ) {
 		super();
@@ -68,24 +67,28 @@ public class User implements Serializable {
 	public double deposit(double amount) {
 		balance += amount;
 		transactionHistory.put("deposit",amount);
+		utd.addUserTransaction(this, "deposit", amount);
 		return amount;
 	}
 	public void withdraw(double amount) {
 		if(amount > balance) {
-			System.out.println("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
+			log.info("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
+			//System.out.println("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
 			return;
 		}
 		balance -= amount;
 		transactionHistory.put("withdraw",amount);
-
+		utd.addUserTransaction(this, "withdraw", amount);
 	}
 	public HashMap<String, Double> getTransactionHistory() {
 		return transactionHistory;
 	}
 	public void printTransactionHistory() {
-		for (String key : transactionHistory.keySet()) {
-			System.out.println(key + " " + NumberFormat.getCurrencyInstance().format(transactionHistory.get(key)) );
-		}
+		User usr = utd.printUserTransactions(this);
+//		for (String key : usr.getTransactionHistory().keySet()) {
+//			System.out.println(key + " " + NumberFormat.getCurrencyInstance().format(usr.getTransactionHistory().get(key)));
+//			//log.info(key + " " + NumberFormat.getCurrencyInstance().format(transactionHistory.get(key)));
+//		}
 	}
 	public int sendTransfer(User u, double amount) {
 		if (balance > amount) {
@@ -94,13 +97,28 @@ public class User implements Serializable {
 			transactionHistory.put("wire transfer to "+u.getUsername(), amount);
 			return 1;
 		}else {
-			System.out.println("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
+			//System.out.println("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance));
+			log.info(("Insufficient funds: current balance = " + NumberFormat.getCurrencyInstance().format(balance)));
 			return 0;
 		}
 	}
 	public void receiveTransfer(User u, double amount) {
 		balance += amount;
 		transactionHistory.put("wire transfer from "+u.getUsername(), amount);
+	}
+	
+	public void setBalance(double balance) {
+		this.balance = balance;
+	}
+	public int getUid() {
+		return uid;
+	}
+	public void setUid(int uid) {
+		this.uid = uid;
+	}
+	
+	public void setTransactionHistory(HashMap<String, Double> transactionHistory) {
+		this.transactionHistory = transactionHistory;
 	}
 	@Override
 	public int hashCode() {
@@ -114,6 +132,7 @@ public class User implements Serializable {
 		result = prime * result + ((lastName == null) ? 0 : lastName.hashCode());
 		result = prime * result + ((password == null) ? 0 : password.hashCode());
 		result = prime * result + ((transactionHistory == null) ? 0 : transactionHistory.hashCode());
+		result = prime * result + uid;
 		result = prime * result + ((username == null) ? 0 : username.hashCode());
 		return result;
 	}
@@ -150,6 +169,8 @@ public class User implements Serializable {
 				return false;
 		} else if (!transactionHistory.equals(other.transactionHistory))
 			return false;
+		if (uid != other.uid)
+			return false;
 		if (username == null) {
 			if (other.username != null)
 				return false;
@@ -159,8 +180,10 @@ public class User implements Serializable {
 	}
 	@Override
 	public String toString() {
-		return "User [username=" + username + ", password=" + password + ", firstName=" + firstName + ", lastName="
-				+ lastName + ", age=" + age + ", balance=" + balance + ", transactionHistory=" + transactionHistory
-				+ "]";
+		return "User [uid=" + uid + ", username=" + username + ", password=" + password + ", firstName=" + firstName
+				+ ", lastName=" + lastName + ", age=" + age + ", balance=" + balance + ", transactionHistory="
+				+ transactionHistory + "]";
 	}
+
+	
 }
